@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="Img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form>
+                <div class="display">
+                    <input type="text" readonly>
+                </div>
+                <div class="buttons" id="firstButtonRow">
+                    <input type="button" value="AC" class="ac" onclick="displayAllClear()">
+                    <input type="button" value="DEL" class="del" onclick="oneNumberClear()">
+                    <input type="button" value="%" class="evalbuttons" onclick="appendOfDisplay('%')">
+                    <input type="button" value="/" class="evalbuttons" onclick="appendOfDisplay('/')">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="7" onclick="appendOfDisplay('7')">
+                    <input type="button" value="8" onclick="appendOfDisplay('8')">
+                    <input type="button" value="9" onclick="appendOfDisplay('9')">
+                    <input type="button" value="*" class="evalbuttons" onclick="appendOfDisplay('*')">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="4" onclick="appendOfDisplay('4')">
+                    <input type="button" value="5" onclick="appendOfDisplay('5')">
+                    <input type="button" value="6" onclick="appendOfDisplay('6')">
+                    <input type="button" value="-" class="evalbuttons" onclick="appendOfDisplay('-')">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="1" onclick="appendOfDisplay('1')">
+                    <input type="button" value="2" onclick="appendOfDisplay('2')">
+                    <input type="button" value="3" onclick="appendOfDisplay('3')">
+                    <input type="button" value="+" class="evalbuttons" onclick="appendOfDisplay('+')">
+                </div>
+                <div class="buttons" id="lastButtonsRow">
+                    <input type="button" value="00" onclick="appendOfDisplay('00')">
+                    <input type="button" value="0" onclick="appendOfDisplay('0')">
+                    <input type="button" value="." onclick="appendOfDisplay('.')">
+                    <input type="button" value="=" class="equal" onclick="calculate()">
+                </div>
+            </form>
+        </div>
+        <!-- <input type="text" id="test"> -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
